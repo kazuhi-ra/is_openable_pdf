@@ -1,0 +1,45 @@
+{
+  "name": "@kazuhi-ra/is-openable-pdf",
+  "version": "0.1.0",
+  "description": "Check if a PDF file is openable using WebAssembly",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "check": "biome check --apply ."
+  },
+  "keywords": [
+    "pdf",
+    "validation",
+    "file-check",
+    "wasm",
+    "webassembly"
+  ],
+  "author": "kazuhi-ra",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazuhi-ra/is_openable_pdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kazuhi-ra/is_openable_pdf/issues"
+  },
+  "homepage": "https://github.com/kazuhi-ra/is_openable_pdf#readme",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.15.17",
+    "typescript": "^5.8.3",
+    "vite-plugin-wasm": "^3.4.1",
+    "vitest": "^3.1.3"
+  }
+}
