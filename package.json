@@ -1,12 +1,15 @@
 {
   "name": "@kazuhi-ra/is-openable-pdf",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Check if a PDF file is openable using WebAssembly",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "pkg/is_openable_pdf.js",
+    "pkg/is_openable_pdf_bg.wasm",
+    "pkg/is_openable_pdf_bg.js"
   ],
   "scripts": {
     "build": "tsc",
