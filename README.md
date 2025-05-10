@@ -1,6 +1,5 @@
-# @kazuhi-ra/is-openable-pdf
-
-A WebAssembly library to check if a PDF can be opened when the user password is either not set or is the default (empty string).
+## Motivation
+In a browser environment, JavaScript alone cannot reliably detect whether a PDF file is password-protected—especially when the user password is set to the default (an empty string). Standard browser APIs do not provide sufficient detail for this check. This library uses WebAssembly to overcome that limitation by attempting to open the PDF directly, determining whether a password is required.
 
 ## Install
 
