@@ -16,6 +16,7 @@ test-rust:
 
 build-wasm:
 	RUSTFLAGS='--cfg getrandom_backend="wasm_js"' wasm-pack build --target bundler --out-dir pkg
+	rm pkg/.gitignore pkg/README.md pkg/package.json
 	npm run optimize-wasm
 
 build-ts:
