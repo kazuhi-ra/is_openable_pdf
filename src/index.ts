@@ -1,13 +1,13 @@
-import { is_openable_pdf } from '../pkg/is_openable_pdf.js'
+import { is_openable_pdf } from '../dist/is_openable_pdf.js'
 
-let wasmModule: typeof import('../pkg/is_openable_pdf.js') | null = null
+let wasmModule: typeof import('../dist/is_openable_pdf.js') | null = null
 
 /**
  * Initialize WebAssembly module
  */
 export async function initWasm(): Promise<void> {
   if (!wasmModule) {
-    wasmModule = await import('../pkg/is_openable_pdf.js')
+    wasmModule = await import('../dist/is_openable_pdf.js')
   }
 }
 
