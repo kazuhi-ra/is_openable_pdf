@@ -14,7 +14,7 @@ describe('isOpenablePdf', () => {
     const target = new File([buffer], 'no_password.pdf', {
       type: 'application/pdf',
     })
-    expect(await isOpenablePdf(target)).toBe(false)
+    expect(await isOpenablePdf(target)).toBe(true)
   })
 
   it('should return true for a PDF file with empty password', async () => {
