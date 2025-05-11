@@ -16,6 +16,7 @@ test-rust:
 
 build-wasm:
 	RUSTFLAGS='--cfg getrandom_backend="wasm_js"' wasm-pack build --target bundler --out-dir dist
+	npm run optimize-wasm
 
 build-ts:
 	npm run build
