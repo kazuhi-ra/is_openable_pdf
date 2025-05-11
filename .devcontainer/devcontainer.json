@@ -1,0 +1,23 @@
+{
+  "name": "Rust + Node.js Development",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "dbaeumer.vscode-eslint",
+        "biomejs.biome",
+        "serayuzgur.crates",
+        "tamasfe.even-better-toml"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  }
+}
