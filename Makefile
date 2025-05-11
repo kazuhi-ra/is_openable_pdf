@@ -1,12 +1,10 @@
-.PHONY: all clean test build publish dev check release install
+.PHONY: all clean test build publish dev check install
 
 all: clean test build
 
 dev: install clean build test lint
 
 check: test lint
-
-release: clean test build lint
 
 install:
 	npm install
@@ -37,5 +35,7 @@ build: install build-wasm build-ts
 
 test: test-rust test-js
 
-publish: clean build test lint
+prepublish: clean build test lint
+
+publish: prepublish
 	npm publish --access public
