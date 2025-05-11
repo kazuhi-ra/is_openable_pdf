@@ -1,6 +1,6 @@
 {
   "name": "@kazuhi-ra/is-openable-pdf",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Check if a PDF file is openable using WebAssembly",
   "type": "module",
   "main": "dist/index.js",
