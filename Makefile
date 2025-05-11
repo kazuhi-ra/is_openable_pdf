@@ -33,11 +33,9 @@ clean:
 	rm -rf pkg
 	cargo clean
 
-build: build-wasm build-ts
+build: install build-wasm build-ts
 
 test: test-rust test-js
 
-prepublish: clean test build lint
-
-publish: prepublish
+publish: clean build test lint
 	npm publish --access public
