@@ -34,6 +34,6 @@
     }
   },
   "files": {
-    "ignore": ["dist/**"]
+    "ignore": ["pkg/**", "dist/**"]
   }
 }
