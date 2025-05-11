@@ -5,7 +5,12 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "pkg/is_openable_pdf.js",
+    "pkg/is_openable_pdf_bg.wasm",
+    "pkg/is_openable_pdf_bg.js"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest --run",
@@ -14,7 +19,13 @@
     "check": "biome check --apply .",
     "optimize-wasm": "wasm-opt -Oz -o ./dist/is_openable_pdf_bg.wasm ./dist/is_openable_pdf_bg.wasm"
   },
-  "keywords": ["pdf", "validation", "file-check", "wasm", "webassembly"],
+  "keywords": [
+    "pdf",
+    "validation",
+    "file-check",
+    "wasm",
+    "webassembly"
+  ],
   "author": "kazuhi-ra",
   "license": "MIT",
   "repository": {
