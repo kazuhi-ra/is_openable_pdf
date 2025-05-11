@@ -32,5 +32,11 @@ jobs:
           npm install
           npm install @rollup/rollup-linux-x64-gnu
 
-      - name: Run checks
-        run: make prepublish 
+      - name: Build
+        run: make build
+
+      - name: Lint
+        run: make lint
+
+      - name: Test
+        run: make test 
