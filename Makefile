@@ -15,7 +15,7 @@ test-rust:
 	cargo test
 
 build-wasm:
-	RUSTFLAGS='--cfg getrandom_backend="wasm_js"' wasm-pack build --target bundler --out-dir pkg
+	RUSTFLAGS='--cfg getrandom_backend="wasm_js"' wasm-pack build --target bundler --out-dir dist
 
 build-ts:
 	npm run build
@@ -28,7 +28,6 @@ test-js: build-wasm
 
 clean:
 	rm -rf dist
-	rm -rf pkg
 	cargo clean
 
 build: build-wasm build-ts
